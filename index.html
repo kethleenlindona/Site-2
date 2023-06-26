@@ -3,11 +3,15 @@
 <head>
 <meta charset=”UTF-8”>
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+<link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+<link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap&quot; rel="stylesheet">
 <title>
 Ranking Khan Academy
 </title>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/&gt;
 <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/ytc/AGIKgqM7qSg3Yrn9i8-r3ANuQy6EWaF6BRpUYXJpbt2rqg=s900-c-k-c0x00ffffff-no-rj"/&gt;
 </head>
 <body>
@@ -15,11 +19,68 @@ Ranking Khan Academy
 Ranking das Turmas do Khan Academy
 </h1>
 <header class="cabeçalho">
-<span class="cabeçalho_menu"> </span>
-<img src="img/Logo.svg" alt="Logo do Khan">
-<a href="#"> <img src="img/Menu.svg"> </a>
-<a href="#"> <img src="img/Usuário.svg"> </a>
-<a href="#"> <img src="img/Favoritos.svg"> </a>
+<div class="container">
+<input type="checkbox" id="Menu" class="container_botao">
+<label for="Menu">
+<span class="cabeçalho_menu container_imagem"> </span>
+</label>
+<ul class="lista-menu">
+<li class="lista-menu-titulo"> Categorias </li>
+<li class="lista-menu-item"> <a href="#" class="lista-menu-item-link"> História </li>
+<li class="lista-menu-item"> <a href="#" class="lista-menu-item-link"> Números </li>
+<li class="lista-menu-item"> <a href="#" class="lista-menu-item-link"> Conteúdos </li>
+<li class="lista-menu-item"> <a href="#" class="lista-menu-item-link"> Aprendizômetro </li>
+<li class="lista-menu-item"> <a href="#" class="lista-menu-item-link"> Melhores Alunos </li>
+</ul>
+<img src="img/Logo.jpg" alt="Logo do Khan">
+</div>
+<div class="container">
+<a href="#"> <img src="img/Usuário.svg" alt="Meu Perfil" class="container_imagem"> </a>
+<a href="#"> <img src="img/Favoritos.svg" alt="Minhas Turmas" class="container_imagem"> </a>
+</div>
 </header>
+<section class="banner">
+<h2 class="banner-titulo"> Khan Academy </h2>
+<p class="banner-texto"> Plataforma online GRATUITA que possui muitos exercícios que irão contribuir na sua aprendizagem. Intuitiva e simples, a plataforma primeiro aprende sobre você para depois te ensinar.</p>
+<input type="search" class="banner-pesquisa" placeholder="O que mais deseja saber?">
+</section>
+<section class="carrossel">
+<h2 class="carrossel-titulo">
+Cursos Disponíveis
+</h2>
+<!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+<!-- Slides -->
+<div class="swiper-slide"><img src="img/1.svg" alt="Matemática Ensino Fundamental"></div>
+<div class="swiper-slide"><img src="img/2.svg" alt="Matemática Ensino Médio"></div>
+<div class="swiper-slide"><img src="img/3.svg" alt="Matemática Prepare-se"></div>
+<div class="swiper-slide"><img src="img/4.svg" alt="Ciências Ensino Fundamental"></div>
+<div class="swiper-slide"><img src="img/5.svg" alt="Português Prepare-se"></div>
+<div class="swiper-slide"><img src="img/6.svg" alt="Computação Prepare-se"></div>
+<div class="swiper-slide"><img src="img/7.svg" alt="Khan Academy Educadores"></div>
+<div class="swiper-slide"><img src="img/8.svg" alt="Cursos Paraná"></div>
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<!-- If we need scrollbar -->
+<div class="swiper-scrollbar"></div>
+</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script&gt;
+<script>
+const swiper = new Swiper('.swiper', {
+spaceBetween: 10,
+slidesPerView: 3,
+pagination: {
+el: '.swiper-pagination',
+type: 'bullets',
+},
+});
+</script>
 </body>
 </html>
