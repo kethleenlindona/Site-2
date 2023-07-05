@@ -5,54 +5,54 @@
     background-repeat: no-repeat;
     display: inline-block;
     background-position: center;
-    }
-    
-    .cabeçalho{
+}
+
+.cabeçalho{
     background-color: var(--cor-de-texto-principal);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    }
-    
-    .container{
+}
+
+.container{
     display: flex;
     align-items: center;
-    }
-    
-    .container_imagem{
+}
+
+.container_imagem{
     padding: 1em;
-    }
-    
-    .lista-menu{
+}
+
+.lista-menu{
     display: none;
     position: absolute;
     top: 100%;
     width: 15vw;
-    }
-    
-    .container_botao:checked ~ .lista-menu{
+}
+
+.container_botao:checked ~ .lista-menu{
     display: block;
-    }
-    
-    .lista-menu-titulo,
-    .lista-menu-item{
+}
+
+.lista-menu-titulo,
+.lista-menu-item{
     padding: 1em;
     background-color: var(--cor-de-texto-principal);
-    }
-    
-    .lista-menu-titulo{
+}
+
+.lista-menu-titulo{
     color: var(--cor-menu);
     font-weight: 700;
-    }
-    
-    .lista-menu-item-link{
+}
+
+.lista-menu-item-link{
     background-color: var(--cor-menu-itens);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
-    
-    .container_botao{
+}
+
+.container_botao{
     display: none;
-    }
+}
